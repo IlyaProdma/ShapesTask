@@ -72,10 +72,10 @@ public class ShapesTests
     public void TriangleGetArea_AllSidesValid_MustBeCalculatedRight() {
         var inputSides = new[] { 3d, 4, 5 };
         var triangle = new Triangle(inputSides);
-		
-		// треугольник с соотношением сторон 3-4-5 называется "Египетским"
-		// и является прямоугольным, поэтому его площадь можно посчитать как
-		// половину прямоугольника, в данном случае имеющего стороны 3x4:
+
+        // треугольник с соотношением сторон 3-4-5 называется "Египетским"
+        // и является прямоугольным, поэтому его площадь можно посчитать как
+        // половину прямоугольника, в данном случае имеющего стороны 3x4:
         // 0.5 * 3 * 4 = 6
         var standardArea = 6.0;
         var triangleCalculatedArea = triangle.Area;
